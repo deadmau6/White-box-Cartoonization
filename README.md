@@ -50,16 +50,15 @@
 ### Installation
 
 - Assume you already have NVIDIA GPU and CUDA CuDNN installed 
-- Install tensorflow-gpu, we tested 1.12.0 and 1.13.0rc0 
-- Install scikit-image==0.14.5, other versions may cause problems
+- Install the python3 requirements with `pip install -r requirements.txt` or if you have pipenv then run `pipenv install`
+- Tested with python version 3.8
 
 
 ### Inference with Pre-trained Model
 
-- Store test images in /test_code/test_images
-- Run /test_code/cartoonize.py
-- Results will be saved in /test_code/cartoonized_images
-
+- The code can all be run throught the `test_code/run.py` and is simple to use, for extra help you can run `cd test_code && python3 run.py -h`
+- Running the example images: `cd test_code && python3 run.py -i test_images/actress2.jpg` the image should appear but also be saved to `test_code/cartoonize_output`
+- Running example video: `cd test_code && python3 run.py -v test_images/color_clip.mp4` the video will also be displayed and saved to `test_code/cartoonize_output`
 
 ### Train
 
