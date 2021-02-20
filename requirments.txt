@@ -1,0 +1,7 @@
+scikit-image
+numpy
+tqdm
+opencv-python
+tensorflow
+tensorflow-gpu
+tf-slim
